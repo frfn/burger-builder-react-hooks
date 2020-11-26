@@ -4,7 +4,7 @@ import React, {
 } from "react";
 import { Route, Switch, withRouter, Redirect } from "react-router-dom";
 import { connect } from "react-redux";
-import asyncComponent from "./hoc/asyncComponent/asyncComponent";
+import asyncComponent from "./hoc/asyncComponent/asyncComponent"; /* You can use React.lazy, Suspense instead */
 
 import Layout from "./hoc/Layout/Layout";
 import BurgerBuilder from "./containers/BurgerBuilder/BurgerBuilder";
