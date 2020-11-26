@@ -3,7 +3,7 @@ import React, {
 	useEffect,
 } from "react";
 import { Route, Switch, withRouter, Redirect } from "react-router-dom";
-import { connect } from "react-redux";
+import { connect, useSelector, useDispatch } from "react-redux";
 import asyncComponent from "./hoc/asyncComponent/asyncComponent"; /* You can use React.lazy, Suspense instead */
 
 import Layout from "./hoc/Layout/Layout";
