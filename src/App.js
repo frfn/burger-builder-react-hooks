@@ -24,9 +24,11 @@ const asyncAuth = asyncComponent(() => {
 });
 
 const App = (props) => {
+	const { onTryAutoSignup } = props;
+
 	useEffect(() => {
 		props.onTryAutoSignup();
-	}, []);
+	}, [onTryAutoSignup]);
 
 	let routes = (
 		<Switch>
