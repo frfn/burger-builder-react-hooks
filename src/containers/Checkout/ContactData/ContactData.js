@@ -140,6 +140,8 @@ const ContactData = (props) => {
 			formIsValid =
 				updatedOrderForm[inputIdentifier].valid && formIsValid;
 		}
+
+		// LOOK, it affects both orderForm and formIsValid
 		setState({ orderForm: updatedOrderForm, formIsValid: formIsValid });
 	};
 

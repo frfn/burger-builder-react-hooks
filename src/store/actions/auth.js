@@ -91,6 +91,7 @@ export const authCheckState = () => {
 			const expirationDate = new Date(
 				localStorage.getItem("expirationDate")
 			);
+			//  3:00PM		      2:00PM --> if it becomes 3:01PM, then logout
 			if (expirationDate <= new Date()) {
 				dispatch(logout());
 			} else {

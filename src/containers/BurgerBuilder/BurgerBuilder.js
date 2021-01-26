@@ -79,10 +79,12 @@ const BurgerBuilder = (props) => {
 
 	const purchaseHandler = () => {
 		if (isAuthenticated) {
-			setState({ purchasing: true });
+			setState({ purchasing: true }); /* show modal */
 		} else {
-			onSetAuthRedirectPath("/checkout");
-			props.history.push("/auth");
+			onSetAuthRedirectPath(
+				"/checkout"
+			); /* IF authenticated in Auth.js - redirect to checkout! */
+			props.history.push("/auth"); /* this is what pushes to /auth */
 		}
 	};
 

@@ -13,7 +13,7 @@ const httpClient = (axios) => {
 	const resInterceptor = axios.interceptors.response.use(
 		(res) => res,
 		(error) => {
-			setState({ error: error });
+			setState({ error: error, test: "test" });
 		}
 	);
 	useEffect(() => {
@@ -27,6 +27,7 @@ const httpClient = (axios) => {
 		setState({ error: null });
 	};
 
+	console.log(state);
 	return [state, errorConfirmedHandler];
 };
 

@@ -13,6 +13,7 @@ import classes from "./Auth.css";
 import * as actions from "../../store/actions/index";
 import { updateObject, checkValidity } from "../../shared/utility";
 
+/* all the props ARE COMING FROM the Redux */
 const Auth = (props) => {
 	const [state, setState] = useState({
 		controls: {
