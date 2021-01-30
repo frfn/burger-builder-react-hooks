@@ -13,13 +13,13 @@ Takeaways:
     -   If your function component wrapped in React.memo has a useState or useContext Hook in its implementation, it will still rerender when state or context change.
     -   Unlike the shouldComponentUpdate() method on class components, the areEqual function returns true if the props are equal and false if the props are not equal. This is the inverse from shouldComponentUpdate.
 
--   useCallback()
+-   `useCallback()`: saves a rerender for functions and memoizing the function
 
--   useMemo()
+-   `useMemo()`: saves a rerender for values and memoizing the value
 
--   useState()
+-   `useState()`: state management
 
--   useEffect()
+-   `useEffect()`
 
     -   can be
         `componentDidMount`: []
